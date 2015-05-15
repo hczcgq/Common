@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@color/transparent"
+                android:text="Take Photo"
+                android:textColor="#0079FF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#aab2be" />
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@color/transparent"
+                android:text="Choose Photo"
+                android:textColor="#0079FF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/three_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#aab2be" />
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@color/transparent"
+                android:text="Other"
+                android:textColor="#0079FF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/corners_bg"
+            android:text="Cancel"
+            android:textColor="#0079FF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
