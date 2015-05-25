@@ -40,35 +40,42 @@ public final class R {
         public static final int btn_yellow_normal=0x7f020001;
         public static final int btn_yellow_pressed=0x7f020002;
         public static final int corners_bg=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int icon_password=0x7f020005;
-        public static final int list_selector=0x7f020006;
-        public static final int wheel_bg=0x7f020007;
-        public static final int wheel_val=0x7f020008;
+        public static final int corners_bg_white=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int icon_password=0x7f020006;
+        public static final int list_selector=0x7f020007;
+        public static final int wheel_bg=0x7f020008;
+        public static final int wheel_val=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a000d;
-        public static final int btn_cancel=0x7f0a000a;
-        public static final int btn_done=0x7f0a000b;
-        public static final int btn_name=0x7f0a0002;
-        public static final int btn_one=0x7f0a0006;
-        public static final int btn_three=0x7f0a0009;
-        public static final int btn_two=0x7f0a0007;
-        public static final int gridview=0x7f0a0001;
-        public static final int id_province=0x7f0a000c;
-        public static final int list=0x7f0a0003;
-        public static final int main=0x7f0a0000;
-        public static final int name=0x7f0a0004;
-        public static final int pop_layout=0x7f0a0005;
-        public static final int three_line=0x7f0a0008;
+        public static final int action_settings=0x7f0a0012;
+        public static final int btn_cancel=0x7f0a000f;
+        public static final int btn_done=0x7f0a0010;
+        public static final int btn_name=0x7f0a0007;
+        public static final int btn_one=0x7f0a000b;
+        public static final int btn_three=0x7f0a000e;
+        public static final int btn_two=0x7f0a000c;
+        public static final int content=0x7f0a0001;
+        public static final int gridview=0x7f0a0006;
+        public static final int id_province=0x7f0a0011;
+        public static final int list=0x7f0a0008;
+        public static final int main=0x7f0a0005;
+        public static final int message=0x7f0a0002;
+        public static final int name=0x7f0a0009;
+        public static final int negativeButton=0x7f0a0003;
+        public static final int pop_layout=0x7f0a000a;
+        public static final int positiveButton=0x7f0a0004;
+        public static final int three_line=0x7f0a000d;
+        public static final int title=0x7f0a0000;
     }
     public static final class layout {
-        public static final int view_popwindow=0x7f030000;
-        public static final int view_popwindow_item=0x7f030001;
-        public static final int view_popwindow_menu=0x7f030002;
-        public static final int view_popwindow_menu_item=0x7f030003;
-        public static final int view_popwindow_upload_image=0x7f030004;
-        public static final int view_popwindow_wheel=0x7f030005;
+        public static final int view_dialog_confirm_cancel=0x7f030000;
+        public static final int view_popwindow=0x7f030001;
+        public static final int view_popwindow_item=0x7f030002;
+        public static final int view_popwindow_menu=0x7f030003;
+        public static final int view_popwindow_menu_item=0x7f030004;
+        public static final int view_popwindow_upload_image=0x7f030005;
+        public static final int view_popwindow_wheel=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -108,6 +115,9 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080001;
+        /**  对话框 
+         */
+        public static final int Dialogstyle=0x7f080004;
         /**  Dialog Activity 
          */
         public static final int MyDialogStyle=0x7f080003;

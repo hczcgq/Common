@@ -22,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.chen.ui.PopupWindowAvtivity" />
+        <activity android:name="com.chen.ui.MainDialogAvtivity" />
         <activity
             android:name="com.chen.ui.PopupWindowDialogAvtivity"
             android:theme="@style/MyDialogStyle" />

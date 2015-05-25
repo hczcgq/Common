@@ -25,14 +25,14 @@ public class MainActivity extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         if (position == 0) {
-            Intent intent = new Intent(this, PopupWindowAvtivity.class);
+            Intent intent = new Intent(this, MainDialogAvtivity.class);
             startActivity(intent);
         }
     }
 
     private List<String> fillList() {
         List<String> items = new ArrayList<String>();
-        items.add("PopupWindow各种方式");
+        items.add("弹出对话框各种方式");
         items.add("星期二");
         items.add("星期三");
         items.add("星期四");
