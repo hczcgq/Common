@@ -13,6 +13,108 @@ public final class R {
         public static final int push_bottom_out=0x7f040001;
     }
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int barColor=0x7f010001;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int barLength=0x7f010008;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int barWidth=0x7f010007;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circleColor=0x7f010006;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int delayMillis=0x7f010005;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rimColor=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rimWidth=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spinSpeed=0x7f010004;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int text=0x7f010000;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textColor=0x7f010009;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textSize=0x7f01000a;
     }
     public static final class color {
         /**  黄色按钮颜色 
@@ -36,36 +138,38 @@ public final class R {
         public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
-        public static final int btn_yellow=0x7f020000;
-        public static final int btn_yellow_normal=0x7f020001;
-        public static final int btn_yellow_pressed=0x7f020002;
-        public static final int corners_bg=0x7f020003;
-        public static final int corners_bg_white=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int icon_password=0x7f020006;
-        public static final int list_selector=0x7f020007;
-        public static final int wheel_bg=0x7f020008;
-        public static final int wheel_val=0x7f020009;
+        public static final int bg_upload=0x7f020000;
+        public static final int btn_yellow=0x7f020001;
+        public static final int btn_yellow_normal=0x7f020002;
+        public static final int btn_yellow_pressed=0x7f020003;
+        public static final int corners_bg=0x7f020004;
+        public static final int corners_bg_white=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int icon_password=0x7f020007;
+        public static final int list_selector=0x7f020008;
+        public static final int wheel_bg=0x7f020009;
+        public static final int wheel_val=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0012;
-        public static final int btn_cancel=0x7f0a000f;
-        public static final int btn_done=0x7f0a0010;
-        public static final int btn_name=0x7f0a0007;
-        public static final int btn_one=0x7f0a000b;
-        public static final int btn_three=0x7f0a000e;
-        public static final int btn_two=0x7f0a000c;
+        public static final int action_settings=0x7f0a0013;
+        public static final int btn_cancel=0x7f0a0010;
+        public static final int btn_done=0x7f0a0011;
+        public static final int btn_name=0x7f0a0008;
+        public static final int btn_one=0x7f0a000c;
+        public static final int btn_three=0x7f0a000f;
+        public static final int btn_two=0x7f0a000d;
         public static final int content=0x7f0a0001;
         public static final int gridview=0x7f0a0006;
-        public static final int id_province=0x7f0a0011;
-        public static final int list=0x7f0a0008;
+        public static final int id_province=0x7f0a0012;
+        public static final int list=0x7f0a0009;
         public static final int main=0x7f0a0005;
         public static final int message=0x7f0a0002;
-        public static final int name=0x7f0a0009;
+        public static final int name=0x7f0a000a;
         public static final int negativeButton=0x7f0a0003;
-        public static final int pop_layout=0x7f0a000a;
+        public static final int pop_layout=0x7f0a000b;
         public static final int positiveButton=0x7f0a0004;
-        public static final int three_line=0x7f0a000d;
+        public static final int progress_bar=0x7f0a0007;
+        public static final int three_line=0x7f0a000e;
         public static final int title=0x7f0a0000;
     }
     public static final class layout {
@@ -122,4 +226,209 @@ public final class R {
          */
         public static final int MyDialogStyle=0x7f080003;
     }
+    public static final class styleable {
+        /**  圆形进度条 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ProgressWheel_barColor com.chen:barColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_barLength com.chen:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_barWidth com.chen:barWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_circleColor com.chen:circleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_delayMillis com.chen:delayMillis}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_rimColor com.chen:rimColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_rimWidth com.chen:rimWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_spinSpeed com.chen:spinSpeed}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_text com.chen:text}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_textColor com.chen:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_textSize com.chen:textSize}</code></td><td></td></tr>
+           </table>
+           @see #ProgressWheel_barColor
+           @see #ProgressWheel_barLength
+           @see #ProgressWheel_barWidth
+           @see #ProgressWheel_circleColor
+           @see #ProgressWheel_delayMillis
+           @see #ProgressWheel_rimColor
+           @see #ProgressWheel_rimWidth
+           @see #ProgressWheel_spinSpeed
+           @see #ProgressWheel_text
+           @see #ProgressWheel_textColor
+           @see #ProgressWheel_textSize
+         */
+        public static final int[] ProgressWheel = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#barColor}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:barColor
+        */
+        public static final int ProgressWheel_barColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#barLength}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:barLength
+        */
+        public static final int ProgressWheel_barLength = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#barWidth}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:barWidth
+        */
+        public static final int ProgressWheel_barWidth = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#circleColor}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:circleColor
+        */
+        public static final int ProgressWheel_circleColor = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#delayMillis}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:delayMillis
+        */
+        public static final int ProgressWheel_delayMillis = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#rimColor}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:rimColor
+        */
+        public static final int ProgressWheel_rimColor = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#rimWidth}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:rimWidth
+        */
+        public static final int ProgressWheel_rimWidth = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#spinSpeed}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:spinSpeed
+        */
+        public static final int ProgressWheel_spinSpeed = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#text}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:text
+        */
+        public static final int ProgressWheel_text = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#textColor}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:textColor
+        */
+        public static final int ProgressWheel_textColor = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#textSize}
+          attribute's value can be found in the {@link #ProgressWheel} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:textSize
+        */
+        public static final int ProgressWheel_textSize = 10;
+    };
 }

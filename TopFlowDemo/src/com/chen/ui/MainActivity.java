@@ -1,8 +1,15 @@
 package com.chen.ui;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +26,14 @@ public class MainActivity extends ListActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, items);
         setListAdapter(adapter);
+
+        new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                getPDAServerData();
+            }
+        }).start();
     }
 
     @Override
@@ -27,18 +42,56 @@ public class MainActivity extends ListActivity {
         if (position == 0) {
             Intent intent = new Intent(this, MainDialogAvtivity.class);
             startActivity(intent);
+        }else if(position == 1){
+            Intent intent = new Intent(this, MainUploadAndDownloadAvtivity.class);
+            startActivity(intent);
         }
     }
 
     private List<String> fillList() {
         List<String> items = new ArrayList<String>();
         items.add("弹出对话框各种方式");
-        items.add("星期二");
+        items.add("上传下载");
         items.add("星期三");
         items.add("星期四");
         items.add("星期五");
         items.add("星期六");
         items.add("星期日");
         return items;
+    }
+
+    private void getPDAServerData() {
+        System.out.println("dsdfsad");
+        String result = null;
+        try {
+
+            // 创建一个HttpClient对象
+            HttpClient httpclient = new DefaultHttpClient();
+            // 远程登录URL
+            String processURL ="http://hm-soft-pc:8080/AndroidStruts2JSON/login?userName=chenguoquan&password=123456";
+            // 创建HttpGet对象
+            HttpGet request = new HttpGet(processURL);
+            // 请求信息类型MIME每种响应类型的输出（普通文本、html 和 XML，json）。允许的响应类型应当匹配资源类中生成的 MIME
+            // 类型
+            // 资源类生成的 MIME 类型应当匹配一种可接受的 MIME 类型。如果生成的 MIME 类型和可接受的 MIME 类型不
+            // 匹配，那么将
+            // 生成 com.sun.jersey.api.client.UniformInterfaceException。例如，将可接受的
+            // MIME 类型设置为 text/xml，而将
+            // 生成的 MIME 类型设置为 application/xml。将生成 UniformInterfaceException。
+            request.addHeader("Accept", "text/json");
+            // 获取响应的结果
+            HttpResponse response = httpclient.execute(request);
+            // 获取HttpEntity
+            HttpEntity entity = response.getEntity();
+            // 获取响应的结果信息
+            String json = EntityUtils.toString(entity, "UTF-8");
+            System.out.println("json:"+json);
+        } catch (ClientProtocolException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
