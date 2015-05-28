@@ -37,6 +37,10 @@
         </activity>
         <activity android:name="com.chen.ui.MainDialogAvtivity" />
         <activity android:name="com.chen.ui.MainUploadAndDownloadAvtivity" />
+        <activity android:name="com.chen.ui.GreenDaoActivity" 
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.chen.ui.GreenDaoAddActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
         <activity
             android:name="com.chen.ui.PopupWindowDialogAvtivity"
             android:theme="@style/MyDialogStyle" />

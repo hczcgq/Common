@@ -42,8 +42,12 @@ public class MainActivity extends ListActivity {
         if (position == 0) {
             Intent intent = new Intent(this, MainDialogAvtivity.class);
             startActivity(intent);
-        }else if(position == 1){
-            Intent intent = new Intent(this, MainUploadAndDownloadAvtivity.class);
+        } else if (position == 1) {
+            Intent intent = new Intent(this,
+                    MainUploadAndDownloadAvtivity.class);
+            startActivity(intent);
+        } else if (position == 2) {
+            Intent intent = new Intent(this, GreenDaoActivity.class);
             startActivity(intent);
         }
     }
@@ -52,7 +56,7 @@ public class MainActivity extends ListActivity {
         List<String> items = new ArrayList<String>();
         items.add("弹出对话框各种方式");
         items.add("上传下载");
-        items.add("星期三");
+        items.add("GreenDAO数据库ORM框架");
         items.add("星期四");
         items.add("星期五");
         items.add("星期六");
@@ -68,7 +72,7 @@ public class MainActivity extends ListActivity {
             // 创建一个HttpClient对象
             HttpClient httpclient = new DefaultHttpClient();
             // 远程登录URL
-            String processURL ="http://hm-soft-pc:8080/AndroidStruts2JSON/login?userName=chenguoquan&password=123456";
+            String processURL = "http://hm-soft-pc:8080/AndroidStruts2JSON/login?userName=chenguoquan&password=123456";
             // 创建HttpGet对象
             HttpGet request = new HttpGet(processURL);
             // 请求信息类型MIME每种响应类型的输出（普通文本、html 和 XML，json）。允许的响应类型应当匹配资源类中生成的 MIME
@@ -85,7 +89,7 @@ public class MainActivity extends ListActivity {
             HttpEntity entity = response.getEntity();
             // 获取响应的结果信息
             String json = EntityUtils.toString(entity, "UTF-8");
-            System.out.println("json:"+json);
+            System.out.println("json:" + json);
         } catch (ClientProtocolException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

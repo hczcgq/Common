@@ -151,35 +151,49 @@ containing a value of this type.
         public static final int wheel_val=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0013;
-        public static final int btn_cancel=0x7f0a0010;
-        public static final int btn_done=0x7f0a0011;
-        public static final int btn_name=0x7f0a0008;
-        public static final int btn_one=0x7f0a000c;
-        public static final int btn_three=0x7f0a000f;
-        public static final int btn_two=0x7f0a000d;
+        public static final int action_settings=0x7f0a001e;
+        public static final int btn_add=0x7f0a0006;
+        public static final int btn_back=0x7f0a0005;
+        public static final int btn_cancel=0x7f0a001b;
+        public static final int btn_done=0x7f0a001c;
+        public static final int btn_name=0x7f0a0015;
+        public static final int btn_one=0x7f0a0017;
+        public static final int btn_three=0x7f0a001a;
+        public static final int btn_two=0x7f0a0018;
         public static final int content=0x7f0a0001;
-        public static final int gridview=0x7f0a0006;
-        public static final int id_province=0x7f0a0012;
-        public static final int list=0x7f0a0009;
-        public static final int main=0x7f0a0005;
+        public static final int gridview=0x7f0a0013;
+        public static final int id_province=0x7f0a001d;
+        public static final int list=0x7f0a0011;
+        public static final int main=0x7f0a0012;
         public static final int message=0x7f0a0002;
-        public static final int name=0x7f0a000a;
+        public static final int mobile=0x7f0a0010;
+        public static final int name=0x7f0a000f;
         public static final int negativeButton=0x7f0a0003;
-        public static final int pop_layout=0x7f0a000b;
+        public static final int pop_layout=0x7f0a0016;
         public static final int positiveButton=0x7f0a0004;
-        public static final int progress_bar=0x7f0a0007;
-        public static final int three_line=0x7f0a000e;
+        public static final int progress_bar=0x7f0a0014;
+        public static final int three_line=0x7f0a0019;
         public static final int title=0x7f0a0000;
+        public static final int tv_age=0x7f0a0009;
+        public static final int tv_des=0x7f0a000e;
+        public static final int tv_email=0x7f0a000b;
+        public static final int tv_hometowm=0x7f0a000c;
+        public static final int tv_job=0x7f0a000d;
+        public static final int tv_mobile=0x7f0a000a;
+        public static final int tv_name=0x7f0a0007;
+        public static final int tv_sex=0x7f0a0008;
     }
     public static final class layout {
         public static final int view_dialog_confirm_cancel=0x7f030000;
-        public static final int view_popwindow=0x7f030001;
-        public static final int view_popwindow_item=0x7f030002;
-        public static final int view_popwindow_menu=0x7f030003;
-        public static final int view_popwindow_menu_item=0x7f030004;
-        public static final int view_popwindow_upload_image=0x7f030005;
-        public static final int view_popwindow_wheel=0x7f030006;
+        public static final int view_greendao_add=0x7f030001;
+        public static final int view_greendao_item=0x7f030002;
+        public static final int view_greendao_main=0x7f030003;
+        public static final int view_popwindow=0x7f030004;
+        public static final int view_popwindow_item=0x7f030005;
+        public static final int view_popwindow_menu=0x7f030006;
+        public static final int view_popwindow_menu_item=0x7f030007;
+        public static final int view_popwindow_upload_image=0x7f030008;
+        public static final int view_popwindow_wheel=0x7f030009;
     }
     public static final class menu {
         public static final int main=0x7f090000;
