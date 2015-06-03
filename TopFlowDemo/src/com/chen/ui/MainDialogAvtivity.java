@@ -58,7 +58,7 @@ public class MainDialogAvtivity extends Activity {
                     startActivity(intent);
                     overridePendingTransition(R.anim.push_bottom_in,
                             R.anim.push_bottom_out);
-                }else if(position==4) {
+                } else if (position == 4) {
                     ConfirmCancelDialog();
                 }
             }
@@ -104,6 +104,7 @@ public class MainDialogAvtivity extends Activity {
 
     /**
      * popwindow弹出
+     * 
      * @param arg1
      */
     protected void rightMenu(View arg1) {
@@ -124,33 +125,26 @@ public class MainDialogAvtivity extends Activity {
             mMenuPopWindow.dismiss();
         }
     };
-    
-    
+
     private void ConfirmCancelDialog() {
-        ConfirmCancelDialog.Builder customBuilder = new  ConfirmCancelDialog.Builder(this);
-        customBuilder
-                .setTitle("提示")
-                .setMessage("对话框标题")
-                .setPositiveButton("确认",
-                        new DialogInterface.OnClickListener() {
+        ConfirmCancelDialog.Builder customBuilder = new ConfirmCancelDialog.Builder(
+                this);
+        customBuilder.setTitle("提示").setMessage("对话框标题")
+                .setPositiveButton("确认", new DialogInterface.OnClickListener() {
 
-                            @Override
-                            public void onClick(DialogInterface dialog,
-                                    int which) {
-                                dialog.dismiss();
-                            }
-                        })
-                .setNegativeButton("取消",
-                        new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
 
-                            @Override
-                            public void onClick(DialogInterface dialog,
-                                    int which) {
-                                dialog.dismiss();
-                            }
-                        });
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
 
         customBuilder.create().show();
     }
-
 }

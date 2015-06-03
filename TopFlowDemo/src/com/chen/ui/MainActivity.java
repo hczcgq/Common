@@ -49,6 +49,12 @@ public class MainActivity extends ListActivity {
         } else if (position == 2) {
             Intent intent = new Intent(this, GreenDaoActivity.class);
             startActivity(intent);
+        }else if(position==3) {
+            Intent intent = new Intent(this, FilterSearchActivity.class);
+            startActivity(intent);
+        }else if(position==4) {
+            Intent intent = new Intent(this, AdvertActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -57,8 +63,8 @@ public class MainActivity extends ListActivity {
         items.add("弹出对话框各种方式");
         items.add("上传下载");
         items.add("GreenDAO数据库ORM框架");
-        items.add("星期四");
-        items.add("星期五");
+        items.add("过滤搜索");
+        items.add("广告接入");
         items.add("星期六");
         items.add("星期日");
         return items;

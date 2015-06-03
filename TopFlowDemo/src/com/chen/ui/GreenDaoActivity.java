@@ -53,24 +53,12 @@ public class GreenDaoActivity extends Activity {
         personList = new ArrayList<Person>();
 
         mListView = (ListView) findViewById(R.id.list);
+        
 
         new Thread(new Runnable() {
 
             @Override
             public void run() {
-//                System.out.println("是否存在："+instance.isExistWithId(1));
-//                System.out.println("是否存在："+instance.isExistWithId(4));
-//                
-//                String sql = "limit 0,2";  
-//                List<Person> persons=instance.queryWithParem(sql);
-//                if(persons!=null && persons.size()>0) {
-//                  for(Person person:persons) {
-//                      System.out.println(person);
-//                  }
-//                }
-//                
-//                personList.addAll(instance.loadAll());
-//                handle.sendEmptyMessage(100);
                 fenye(0, 2);
             }
         }).start();

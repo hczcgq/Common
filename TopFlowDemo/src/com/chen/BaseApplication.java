@@ -1,6 +1,8 @@
 package com.chen;
 
 
+import net.youmi.android.AdManager;
+
 import com.chen.dao.DaoMaster;
 import com.chen.dao.DaoMaster.OpenHelper;
 import com.chen.dao.DaoSession;
@@ -19,7 +21,9 @@ public class BaseApplication extends Application {
     public void onCreate() {  
         super.onCreate();  
         if(mInstance == null)  
-            mInstance = this;  
+            mInstance = this; 
+        com.snmi.adsdk.Ad.initial(this); //申米广告
+        AdManager.getInstance(this).init("85aa56a59eac8b3d", "a14006f66f58d5d7", false); //有米广告
     }  
       
     /** 
