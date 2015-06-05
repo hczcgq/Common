@@ -58,6 +58,9 @@ public class MainActivity extends ListActivity {
         }else if(position==5) {
             Intent intent = new Intent(this,  SplashActivity.class);
             startActivity(intent);
+        }else if(position==6) {
+            Intent intent = new Intent(this,  LocalImageActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -69,7 +72,7 @@ public class MainActivity extends ListActivity {
         items.add("过滤搜索");
         items.add("广告接入");
         items.add("引导页");
-        items.add("星期日");
+        items.add("本地相册");
         return items;
     }
 

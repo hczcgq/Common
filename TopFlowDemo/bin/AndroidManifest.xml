@@ -29,10 +29,10 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
+        android:name="com.chen.BaseApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-       	android:name="com.chen.BaseApplication"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.chen.ui.MainActivity"
@@ -58,16 +58,13 @@
             android:name="com.chen.ui.WheelDialogAvtivity"
             android:theme="@style/MyDialogStyle" />
         <activity android:name="com.chen.ui.FilterSearchActivity" />
-        
         <activity android:name="com.chen.ui.AdvertActivity" />
-        
         <activity android:name="com.chen.ui.SplashActivity" />
-
-         <activity
+        <activity
             android:name="com.chen.ui.SlidePageViewDemoActivity"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
-        </activity>
-        
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name="com.chen.ui.LocalImageActivity" />
+
         <!-- 申米移动广告 -->
         <activity
             android:name="com.snmi.adsdk.banner.SMADPage"

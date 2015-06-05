@@ -32,5 +32,11 @@
         <attr name="textColor" format="color" />
         <attr name="textSize" format="dimension" />
     </declare-styleable>
+    
+    <!-- 圆角 -->
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="imageroundWidth" format="dimension"></attr>
+        <attr name="imageroundHeight" format="dimension"></attr>
+    </declare-styleable>
 
 </resources>
