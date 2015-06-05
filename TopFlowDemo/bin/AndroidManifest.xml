@@ -61,7 +61,13 @@
         
         <activity android:name="com.chen.ui.AdvertActivity" />
         
+        <activity android:name="com.chen.ui.SplashActivity" />
 
+         <activity
+            android:name="com.chen.ui.SlidePageViewDemoActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        
         <!-- 申米移动广告 -->
         <activity
             android:name="com.snmi.adsdk.banner.SMADPage"

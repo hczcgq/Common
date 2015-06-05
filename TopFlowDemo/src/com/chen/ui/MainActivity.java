@@ -55,6 +55,9 @@ public class MainActivity extends ListActivity {
         }else if(position==4) {
             Intent intent = new Intent(this, AdvertActivity.class);
             startActivity(intent);
+        }else if(position==5) {
+            Intent intent = new Intent(this,  SplashActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -65,7 +68,7 @@ public class MainActivity extends ListActivity {
         items.add("GreenDAO数据库ORM框架");
         items.add("过滤搜索");
         items.add("广告接入");
-        items.add("星期六");
+        items.add("引导页");
         items.add("星期日");
         return items;
     }

@@ -117,14 +117,19 @@ containing a value of this type.
         public static final int textSize=0x7f01000a;
     }
     public static final class color {
+        public static final int black=0x7f050003;
+        public static final int black_1=0x7f050004;
         /**  黄色按钮颜色 
          */
-        public static final int btn_yellow_normal=0x7f050002;
-        public static final int btn_yellow_pressed=0x7f050003;
+        public static final int btn_yellow_normal=0x7f050007;
+        public static final int btn_yellow_pressed=0x7f050008;
+        public static final int gray=0x7f050005;
+        public static final int green=0x7f050002;
+        public static final int red=0x7f050006;
         public static final int transparent=0x7f050000;
         /**  滚轮分割线 
          */
-        public static final int wheel_line_border=0x7f050004;
+        public static final int wheel_line_border=0x7f050009;
         public static final int white=0x7f050001;
     }
     public static final class dimen {
@@ -144,14 +149,22 @@ containing a value of this type.
         public static final int btn_yellow_pressed=0x7f020003;
         public static final int corners_bg=0x7f020004;
         public static final int corners_bg_white=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
-        public static final int icon_password=0x7f020007;
-        public static final int list_selector=0x7f020008;
-        public static final int wheel_bg=0x7f020009;
-        public static final int wheel_val=0x7f02000a;
+        public static final int i_shade=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int icon_password=0x7f020008;
+        public static final int list_selector=0x7f020009;
+        public static final int point_normal=0x7f02000a;
+        public static final int point_select=0x7f02000b;
+        public static final int point_selector=0x7f02000c;
+        public static final int whatsnew_00=0x7f02000d;
+        public static final int whatsnew_01=0x7f02000e;
+        public static final int whatsnew_02=0x7f02000f;
+        public static final int whatsnew_03=0x7f020010;
+        public static final int wheel_bg=0x7f020011;
+        public static final int wheel_val=0x7f020012;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a001f;
+        public static final int action_settings=0x7f0a0025;
         public static final int btn_add=0x7f0a0009;
         public static final int btn_back=0x7f0a0008;
         public static final int btn_cancel=0x7f0a001c;
@@ -163,6 +176,11 @@ containing a value of this type.
         public static final int content=0x7f0a0002;
         public static final int gridview=0x7f0a0014;
         public static final int id_province=0x7f0a001e;
+        public static final int img1=0x7f0a0021;
+        public static final int img2=0x7f0a0022;
+        public static final int img3=0x7f0a0023;
+        public static final int img4=0x7f0a0024;
+        public static final int linearlayout=0x7f0a0020;
         public static final int list=0x7f0a0007;
         public static final int main=0x7f0a0000;
         public static final int message=0x7f0a0003;
@@ -173,6 +191,7 @@ containing a value of this type.
         public static final int positiveButton=0x7f0a0005;
         public static final int progress_bar=0x7f0a0015;
         public static final int searchbox=0x7f0a0006;
+        public static final int slidepageviewtest_ui_SlidePageView_test=0x7f0a001f;
         public static final int three_line=0x7f0a001a;
         public static final int title=0x7f0a0001;
         public static final int tv_age=0x7f0a000c;
@@ -198,6 +217,10 @@ containing a value of this type.
         public static final int view_popwindow_menu_item=0x7f03000a;
         public static final int view_popwindow_upload_image=0x7f03000b;
         public static final int view_popwindow_wheel=0x7f03000c;
+        public static final int view_slidepageviewdemo_ui=0x7f03000d;
+        public static final int view_slidepageviewdemo_ui_b=0x7f03000e;
+        public static final int view_slidepageviewdemo_ui_c=0x7f03000f;
+        public static final int view_splash=0x7f030010;
     }
     public static final class menu {
         public static final int main=0x7f090000;

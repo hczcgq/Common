@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-     <color name="transparent">#00000000</color>
-     <color name="white">#ffffff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#7b96bd</color>
+    <color name="black">#000000</color>
+    <color name="black_1">#404040</color>
+    <color name="gray">#696969</color>
+    <color name="red">#FF0000</color>
 
     <!-- 黄色按钮颜色 -->
     <color name="btn_yellow_normal">#FF9C00</color>
@@ -10,4 +15,5 @@
 
     <!-- 滚轮分割线 -->
     <color name="wheel_line_border">#C7C7C7</color>
+
 </resources>
