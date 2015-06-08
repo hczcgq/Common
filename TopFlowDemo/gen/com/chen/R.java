@@ -244,10 +244,10 @@ containing a value of this type.
         public static final int view_advert=0x7f030000;
         public static final int view_dialog_confirm_cancel=0x7f030001;
         public static final int view_filter_search=0x7f030002;
-        public static final int view_filter_search_item=0x7f030003;
-        public static final int view_greendao_add=0x7f030004;
-        public static final int view_greendao_item=0x7f030005;
-        public static final int view_greendao_main=0x7f030006;
+        public static final int view_greendao_add=0x7f030003;
+        public static final int view_greendao_item=0x7f030004;
+        public static final int view_greendao_main=0x7f030005;
+        public static final int view_indexbar=0x7f030006;
         public static final int view_localimage=0x7f030007;
         public static final int view_localimage_grid_item=0x7f030008;
         public static final int view_localimage_list_dir=0x7f030009;

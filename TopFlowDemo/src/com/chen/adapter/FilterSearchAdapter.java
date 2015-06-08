@@ -88,6 +88,7 @@ public class FilterSearchAdapter extends BaseAdapterHelpter<Person> implements
             return results;
         }
 
+        @SuppressWarnings("unchecked")
         @Override
         protected void publishResults(CharSequence constraint,
                 FilterResults results) {

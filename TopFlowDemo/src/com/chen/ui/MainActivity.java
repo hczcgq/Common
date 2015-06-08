@@ -61,6 +61,9 @@ public class MainActivity extends ListActivity {
         }else if(position==6) {
             Intent intent = new Intent(this,  LocalImageActivity.class);
             startActivity(intent);
+        }else if(position==7) {
+//            Intent intent = new Intent(this,  IndexBarActivity.class);
+//            startActivity(intent);
         }
     }
 
@@ -73,6 +76,7 @@ public class MainActivity extends ListActivity {
         items.add("广告接入");
         items.add("引导页");
         items.add("本地相册");
+        items.add("索引条");
         return items;
     }
 
