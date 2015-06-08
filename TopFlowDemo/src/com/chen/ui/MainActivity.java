@@ -66,7 +66,7 @@ public class MainActivity extends ListActivity {
 
     private List<String> fillList() {
         List<String> items = new ArrayList<String>();
-        items.add("弹出对话框各种方式");
+        items.add("对话框");
         items.add("上传下载");
         items.add("GreenDAO数据库ORM框架");
         items.add("过滤搜索");
