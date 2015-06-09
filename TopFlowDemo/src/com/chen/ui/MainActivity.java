@@ -1,8 +1,10 @@
 package com.chen.ui;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -10,6 +12,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,6 +37,11 @@ public class MainActivity extends ListActivity {
                 getPDAServerData();
             }
         }).start();
+        
+        System.out.println(getApplicationContext().getDatabasePath("person_db"));
+        
+        File file=new File(getApplicationContext().getDatabasePath("person_db")+".db");
+        System.out.println(file.exists());
     }
 
     @Override
