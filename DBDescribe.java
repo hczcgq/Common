@@ -185,7 +185,182 @@ public class GeneralExaminationDao extends AbstractDao<GeneralExamination, Strin
                 "'AGEDNESS_INTELLIGENCE' TEXT," + //老年评估-智力评估
                 "'CREATE_TIME' TEXT," + // 创建时间
                 "'UPDATE_TIME' TEXT);"); //更新时间
-    }
+    
+
+
+ db.execSQL("CREATE TABLE " + constraint + "'FOLLOW_UP_HYPERTENSION' (" + //
+                "'FOLLOW_UP_NO' TEXT PRIMARY KEY NOT NULL ," + // 随访编号
+                "'IDCARD' TEXT NOT NULL ," + // 身份证
+                "'GRXX_ZRYS' TEXT," + // 责任医师
+                "'GRXX_SFRQ' TEXT," + //随访日期
+                "'GRXX_SFFS' TEXT," + //随访方式
+                "'GRXX_GXYLX' TEXT," + // 高血压类型
+                "'ZZ' TEXT," + // 症状
+                "'TZ_XY' TEXT," + // 体征－血压
+                "'TZ_XL' TEXT," + // 体征－心率
+                "'TZ_TZ' TEXT," + // 体征－体征
+                "'TZ_SG' TEXT," + // 体征－身高
+                "'TZ_TZZS' TEXT," + // 体征－体制指数
+                "'TZ_QT' TEXT," + // 体征－其他
+                "'SHZDFS_RXYL' TEXT," + // 生活指导方式－日吸烟量
+                "'SHZDFS_RYJL' TEXT," + // 生活指导方式－日饮酒量
+                "'SHZDFS_YDL' TEXT," + // 生活指导方式－运动量
+                "'SHZDFS_SYQK' TEXT," + //生活指导方式－摄盐情况
+                "'SHZDFS_XLTZ' TEXT," + // 生活指导方式－心理调整
+                "'FZJC' TEXT," + // 辅助检查
+                "'FYYCX' TEXT," + // 服药依从性
+                "'YWBLFY_YWBLFY' INTEGER," + // 药物不良反应
+                "'JKWT_YWBLFYMS' TEXT," + // 药物不良反应描述
+                "'CCSFFL' TEXT," + // 此次随访分类
+                "'YYQK_YY' INTEGER," + // 用药情况
+                "'YYQK_YYMS' TEXT," + // 用药情况描述
+                "'ZLJY' TEXT," + // 治疗建议
+                "'ZZ_SFZZ' INTEGER," + // 转诊－是否转诊
+                "'ZZ_SFZZMS' TEXT," + // 转诊－描述
+                "'ZZ_JGJKS' TEXT," + // 转诊－机构及科室
+                "'ZZHF_RQ' TEXT," + // 转诊回访－日期
+                "'ZZHF_BQGSH' TEXT," + // 转诊回访－靶器官损坏
+                "'ZZHF_HBZ' TEXT," + // 转诊回访－合并症
+                "'ZZHF_QTJB' TEXT," + // 转诊回访－其他疾病
+                "'ZZHF_XCSFRQ' TEXT," + // 转诊回访－下次随访日期
+                "'ZZHF_SFYSQM' TEXT," + // 转诊回访－随访医生前面
+                "'CREATE_TIME' TEXT," + // 创建时间
+                "'UPDATE_TIME' TEXT);"); //更新时间
+
+
+ db.execSQL("CREATE TABLE " + constraint + "'ARCHIVE_INFO' (" + //
+                "'IDCARD' TEXT PRIMARY KEY NOT NULL ," + //身份证号
+                "'NAME' TEXT NOT NULL ," + // 姓名
+                "'PICTURE_PATH' TEXT," + // 
+                "'ARCHIVE_NO' TEXT," + // 
+                "'CARD_NO' TEXT," + // 
+                "'GENDER' TEXT," + //  性别
+                "'BIRTHDAY' TEXT NOT NULL ," + // 出生日期
+                "'RELATIONSHIP' TEXT," + // 与户主关系
+                "'WORK_UNIT' TEXT NOT NULL ," + // 工作单位
+                "'TELEPHONE' TEXT NOT NULL ," + // 本人电话
+                "'ETHNIC' TEXT," + // 名族
+                "'CONTACT_NAME' TEXT," + // 联系人
+                "'CONTACT_PHONE' TEXT," + // 联系人电话
+                "'EDUCATION' TEXT," + // 文化程度
+                "'BLOOD_TYPE' TEXT," + //血型
+                "'ACCOUNT_PROPERTY' TEXT," + // 户口性质
+                "'MARRIAGE' TEXT," + // 婚姻状况
+                "'RHNEGATIVE' TEXT," + // RH阴型
+                "'JOB' TEXT," + // 职业
+                "'NATIONALITY' TEXT," + // 国籍
+                "'ASSIST_TYPE' TEXT," + // 援助对象
+                "'EMAIL' TEXT," + // 电子邮箱
+                "'POSTCODE' TEXT," + // 邮编
+                "'FAMILY_ADDRESS' TEXT NOT NULL ," + // 家庭地址
+                "'RESIDENT_TYPE' TEXT," + // 常住类型
+                "'RESIDENT_ADDRESS' TEXT," + //户籍地址
+                "'CERTIFICATE_TYPE' TEXT," + // 证件类型
+                "'NEGATIVE_EVENT' TEXT," + // 负性事件
+                "'MANAGER_UNIT' TEXT," + // 管理单位
+                "'CREATE_DATE' TEXT," + //建档时间
+                "'CATEGORY_NAME' TEXT," + // 30: categoryName
+                "'CATEGORY_NUM' TEXT," + // 31: categoryNum
+                "'INSURANCE_NO' TEXT," + // 医保卡号
+                "'SIGN_UP_DATE' TEXT," + // 签约时间
+                "'EXPOSURE_HISTORIES' TEXT," + // 暴露史
+                "'ALLERGY_HISTORIES' TEXT," + // 过敏史
+                "'FAMLIY_HISTORIES' TEXT," + // 家族史
+                "'PAST_HISTORIES' TEXT," + // 即往史
+                "'SYNTROPHUS_HISTORIES' TEXT," + //遗传病史
+                "'BEAR_HISTORIES' TEXT," + // 生育史
+                "'MENSES_HISTORIES' TEXT," + // 月经史
+                "'DISABILITYIES' TEXT," + // 残疾病史
+                "'FAMILY_INFO' TEXT," + // 家庭信息
+                "'FAMILY_MERMBER' TEXT," + // 家庭成员
+                "'FAMILY_PROBLEM' TEXT," + // 家庭问题
+                "'ENVIRONMENT' TEXT);"); // 生活环境
+
+db.execSQL("CREATE TABLE " + constraint + "'FOLLOW_UP_DIABETES_MELLITUS' (" + //
+                "'FOLLOW_UP_NO' TEXT PRIMARY KEY NOT NULL ," + // 随访编号
+                "'IDCARD' TEXT NOT NULL ," + // 身份证
+                "'GRXX_ZRYS' TEXT," + // 个人信息－责任医师
+                "'GRXX_SFRQ' TEXT," + // 个人信息－随访日期
+                "'GRXX_SFFS' TEXT," + // 个人信息－随访方式
+                "'ZZ' TEXT," + // 症状
+                "'TZ_XY' TEXT," + //体征－血压
+                "'TZ_XL' TEXT," + // 体征－心率
+                "'TZ_TZ' TEXT," + // 体征－体重
+                "'TZ_SG' TEXT," + // 体征－身高
+                "'TZ_TZZS' TEXT," + // 体征－体质实属
+                "'TZ_ZBDMBD' TEXT," + // 体征－足背动脉搏动
+                "'TZ_YW' TEXT," + // 体征－腰围
+                "'TZ_QT' TEXT," + // 体征－其他
+                "'SHZDFS_RXYL' TEXT," + // 生活指导方式－日吸烟量
+                "'SHZDFS_RYJL' TEXT," + // 生活指导方式－日饮酒量
+                "'SHZDFS_YDL' TEXT," + // 生活指导方式－运动量
+                "'SHZDFS_ZS' TEXT," + // 生活指导方式－主食
+                "'SHZDFS_XLTZ' TEXT," + // 生活指导方式－心理调整
+                "'SHZDFS_ZYXW' TEXT," + // 生活指导方式－遵医行为
+                "'YYQK' TEXT," + // 用药情况
+                "'YDS' TEXT," + // 胰岛素
+                "'FZJC' TEXT," + // 辅助检查
+                "'FYYCX' TEXT," + // 服药依从性
+                "'YWBLFY_SFYWBLFY' INTEGER," + //药物不良反应
+                "'JKWT_YWBLFYMS' TEXT," + // 药物不良反应描述
+                "'DXTFY' TEXT," + // 低血糖反应
+                "'CCSFFL' TEXT," + // 此次随访分类
+                "'ZZ_SFZZ' INTEGER," + // 转诊－是否转诊
+                "'ZZ_SFZZMS' TEXT," + // 转诊－转诊描述
+                "'ZZ_JGJKS' TEXT," + // 转诊－机构及科室
+                "'ZZHF_RQ' TEXT," + //  转诊回访－日期
+                "'ZZHF_BQGSH' TEXT," + // 转诊回访－？
+                "'ZZHF_HBZ' TEXT," +// 转诊回访－合并症
+                "'ZZHF_QTJB' TEXT," + // 转诊回访－其他疾病
+                "'ZZHF_XCSFRQ' TEXT," + // 转诊回访－下次随访日期
+                "'ZZHF_SFYSQM' TEXT," + // 转诊回访－随访医生签名
+                "'CREATE_TIME' TEXT," + // 创建时间
+                "'UPDATE_TIME' TEXT);"); // 更新时间
+
+ db.execSQL("CREATE TABLE " + constraint + "'FOLLOW_UP_STROKE' (" + //
+                "'FOLLOW_UP_NO' TEXT PRIMARY KEY NOT NULL ," + // 随访编号
+                "'IDCARD' TEXT NOT NULL ," + // 身份证
+                "'GRXX_ZRYS' TEXT," + // 个人信息－责任医师
+                "'GRXX_SFRQ' TEXT," + // 个人信息－随访日期
+                "'SHXGGB_SFXY' INTEGER," + // 生活习惯改变－是否吸烟
+                "'SHXGGB_SFXYMS' TEXT," + // 生活习惯改变－是否吸烟描述
+                "'SHXGGB_SFYJ' INTEGER," + // 生活习惯改变－是否饮酒
+                "'SHXGGB_SFYJMS' TEXT," + // 生活习惯改变－是否饮酒描述
+                "'SHXGGB_YDMC' TEXT," + // 生活习惯改变－运动
+                "'SHXGGB_YDSJ' TEXT," + //生活习惯改变－运动时间
+                "'SHXGGB_KFDLMC' TEXT," + // 生活习惯改变－康复锻炼
+                "'SHXGGB_KFDLSJ' TEXT," + // 生活习惯改变－康复锻炼时间
+                "'WXYSKZGXY_SFMZCXY' TEXT," + // 危险因素控制高血压－是否每周测血压
+                "'WXYSKZGXY_SFMZCXYMS' TEXT," + // 危险因素控制高血压－是否每周测血压描述
+                "'WXYSKZGXY_YYQK' TEXT," + // 危险因素控制高血压－用药情况
+                "'WXYSKZTNB_FCRQ' TEXT," + // 危险因素控制糖尿病－复查日期
+                "'WXYSKZTNB_XTSP' TEXT," + // 危险因素控制高血压－血糖水平
+                "'WXYSKZTNB_HBAIC' TEXT," + // 危险因素控制高血压－HBaic
+                "'WXYSKZTNB_YYQK' TEXT," + // 危险因素控制高血压－用药情况
+                "'WXYSKZGXZ_FCRQ' TEXT," + // 危险因素控制高血脂－复查日期
+                "'WXYSKZGXZ_TG' TEXT," + // 危险因素控制高血脂－TG
+                "'WXYSKZGXZ_TC' TEXT," + // 危险因素控制高血脂－TC
+                "'WXYSKZGXZ_LDL' TEXT," + // 危险因素控制高血脂－LDL
+                "'WXYSKZGXZ_HDL' TEXT," + // 危险因素控制高血脂－HDL
+                "'WXYSKZGXZ__LP' TEXT," + // 危险因素控制高血脂_LP
+                "'WXYSKZGXZ_YYQK' TEXT," + // 危险因素控制高血脂－用药情况
+                "'ZDSJ_SFZD' INTEGER," + // 终点事件－是否终点
+                "'ZDSJ_XFCZSJZD' TEXT," + // 终点事件－新发卒中事件诊断
+                "'ZDSJ_QTXGSJ' TEXT," + //  终点事件－其他血管事件
+                "'ZDSJ_YDMC' TEXT," + //  终点事件－
+                "'ZDSJ_YDSJ' TEXT," + //  终点事件－
+                "'ZDSJ_KFDLMC' TEXT," + //  终点事件－
+                "'ZDSJ_KFDLSJ' TEXT," + //  终点事件－
+                "'ZDSJ_PF_MRS' TEXT," + //  终点事件－MRs
+                "'ZDSJ_PF_MRSJG' TEXT," + // 终点事件－MRS结果
+                "'ZDSJ_PF_BI' TEXT," + //  终点事件－Bi
+                "'ZDSJ_PF_BIJG' TEXT," + //  终点事件－Bi结果
+                "'ZDSJ_PF_SSPF' TEXT," + //  终点事件－评分－膳食评分
+                "'ZDSJ_PF_SSPFJG' TEXT," + //  终点事件－评分－膳食评分结果
+                "'ZDSJ_SFYSQM' TEXT," + //  终点事件－随访医生签名
+                "'CREATE_TIME' TEXT," + //  创建时间
+                "'UPDATE_TIME' TEXT);"); // 更新时间
+
     } 
     
 }
