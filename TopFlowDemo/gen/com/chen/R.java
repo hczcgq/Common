@@ -11,8 +11,11 @@ public final class R {
     public static final class anim {
         public static final int push_bottom_in=0x7f040000;
         public static final int push_bottom_out=0x7f040001;
-        public static final int slide_in=0x7f040002;
-        public static final int slide_out=0x7f040003;
+        public static final int push_left_in=0x7f040002;
+        public static final int push_left_out=0x7f040003;
+        public static final int slide_in=0x7f040004;
+        public static final int slide_out=0x7f040005;
+        public static final int splash_loading=0x7f040006;
     }
     public static final class attr {
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -183,15 +186,19 @@ containing a value of this type.
         public static final int point_normal=0x7f02000f;
         public static final int point_select=0x7f020010;
         public static final int point_selector=0x7f020011;
-        public static final int whatsnew_00=0x7f020012;
-        public static final int whatsnew_01=0x7f020013;
-        public static final int whatsnew_02=0x7f020014;
-        public static final int whatsnew_03=0x7f020015;
-        public static final int wheel_bg=0x7f020016;
-        public static final int wheel_val=0x7f020017;
+        public static final int splash_bg=0x7f020012;
+        public static final int splash_loading_bg=0x7f020013;
+        public static final int splash_loading_item=0x7f020014;
+        public static final int splash_logo=0x7f020015;
+        public static final int whatsnew_00=0x7f020016;
+        public static final int whatsnew_01=0x7f020017;
+        public static final int whatsnew_02=0x7f020018;
+        public static final int whatsnew_03=0x7f020019;
+        public static final int wheel_bg=0x7f02001a;
+        public static final int wheel_val=0x7f02001b;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0033;
+        public static final int action_settings=0x7f0a0035;
         public static final int btn_add=0x7f0a000d;
         public static final int btn_back=0x7f0a000c;
         public static final int btn_cancel=0x7f0a002a;
@@ -233,6 +240,8 @@ containing a value of this type.
         public static final int progress_bar=0x7f0a0023;
         public static final int searchbox=0x7f0a000a;
         public static final int slidepageviewtest_ui_SlidePageView_test=0x7f0a002d;
+        public static final int splash_loading_item=0x7f0a0034;
+        public static final int splash_logo=0x7f0a0033;
         public static final int three_line=0x7f0a0028;
         public static final int title=0x7f0a0005;
         public static final int tv_age=0x7f0a0010;
