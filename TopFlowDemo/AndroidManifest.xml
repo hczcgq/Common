@@ -60,6 +60,7 @@
         <activity android:name="com.chen.ui.FilterSearchActivity" />
         <activity android:name="com.chen.ui.AdvertActivity" />
         <activity android:name="com.chen.ui.SplashActivity" />
+        <activity android:name="com.chen.ui.ActivityFragmentActivity" />
         <activity
             android:name="com.chen.ui.SlidePageViewDemoActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
