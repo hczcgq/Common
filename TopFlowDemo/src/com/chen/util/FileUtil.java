@@ -88,6 +88,13 @@ public class FileUtil {
         java.io.File myFilePath = new java.io.File(filePath);
         myFilePath.delete();
     }
+    
+    public static void delFile(String filePath) {
+        File file=new File(filePath);
+        if(file.exists()&&file.isFile()) {
+            file.deleteOnExit();
+        }
+    }
 
     /**
      * 删除所有文件

@@ -148,6 +148,7 @@ public class MainUploadAndDownloadAvtivity extends Activity {
                 byte buf[] = new byte[1024];
                 int downLoadFileSize = 0;
                 do {
+                    
                     if (downAttach) {
                         // 循环读取
                         int numread = is.read(buf);

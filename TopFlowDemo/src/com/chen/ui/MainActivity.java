@@ -72,6 +72,9 @@ public class MainActivity extends ListActivity {
         }else if(position==7) {
             Intent intent = new Intent(this,  ActivityFragmentActivity.class);
             startActivity(intent);
+        }else if(position==8) {
+            Intent intent = new Intent(this,  AsyncTaskActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -85,6 +88,7 @@ public class MainActivity extends ListActivity {
         items.add("引导页");
         items.add("本地相册");
         items.add("Activity基类-框架");
+        items.add("AsyncTask停止");
         return items;
     }
 
