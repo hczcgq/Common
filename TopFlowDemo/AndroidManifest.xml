@@ -45,6 +45,7 @@
         </activity>
         <activity android:name="com.chen.ui.MainDialogAvtivity" />
         <activity android:name="com.chen.ui.MainUploadAndDownloadAvtivity" />
+        <activity android:name="com.chen.ui.ListViewRefreshAndDeleteActivity" />
         <activity
             android:name="com.chen.ui.GreenDaoActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar" />
@@ -62,6 +63,7 @@
         <activity android:name="com.chen.ui.SplashActivity" />
         <activity android:name="com.chen.ui.ActivityFragmentActivity" />
         <activity android:name="com.chen.ui.AsyncTaskActivity" />
+        <activity android:name="com.chen.ui.ListViewSwipeActivity" />
         <activity
             android:name="com.chen.ui.SlidePageViewDemoActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
