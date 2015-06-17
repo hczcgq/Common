@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:alpha="0.7"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <TextView 
+            android:id="@+id/tv_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="00:00:00"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"/>
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="录制语音"
+            android:gravity="center|left"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"/>
+        <TextView 
+            android:id="@+id/tv_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="15/06/09"
+            android:gravity="center|left"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            
+            <ImageButton 
+                android:id="@+id/ib_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/record_start"
+                android:contentDescription="@null"
+                android:layout_centerInParent="true"/>
+            <Button 
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/ib_start"/>
+            
+            <Button 
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/ib_start"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:id="@+id/widget0" android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<LinearLayout android:id="@+id/widget36"
+		android:layout_width="315px" 
+		android:layout_height="62px"
+		android:orientation="horizontal"
+		>
+		
+		<ImageButton android:background="@drawable/record_hover1"
+			android:id="@+id/ImageButton01"
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageButton>
+		<ImageView android:id="@+id/widget41"
+		 android:layout_width="6px"
+			android:layout_height="43px">
+		</ImageView>
+		
+		<ImageButton android:background="@drawable/stop_hover2"
+			android:id="@+id/ImageButton02" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageButton>
+		<ImageView android:id="@+id/widget42" android:layout_width="6px"
+			android:layout_height="45px">
+		</ImageView>
+		
+		<ImageButton android:background="@drawable/play_hover1"
+			android:id="@+id/ImageButton03" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageButton>
+		<ImageView android:id="@+id/widget43" android:layout_width="5px"
+			android:layout_height="43px">
+		</ImageView>
+		
+		<ImageButton android:background="@drawable/delete_hover"
+			android:id="@+id/ImageButton04"
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageButton>
+		
+	</LinearLayout>
+		<Button
+			android:id="@+id/myButton"
+			 android:layout_width="90px"
+			android:layout_height="30px"
+			android:text="查看内存大小"
+			android:textSize="10sp"></Button>
+	    <Button 
+	        android:id="@+id/mypuase"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="暂停录音"
+	        />
+	<LinearLayout android:id="@+id/widget36"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<TextView android:id="@+id/TextView01" 
+		android:textSize="18sp"
+		android:textColor="#9AFF028b"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		>
+		</TextView>
+		<ListView android:id="@+id/ListView01" 
+		    android:layout_width="450px "
+              android:layout_height="300px">
+		  </ListView>
+	</LinearLayout>
+</LinearLayout>
