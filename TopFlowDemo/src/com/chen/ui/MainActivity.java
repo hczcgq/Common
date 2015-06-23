@@ -78,6 +78,9 @@ public class MainActivity extends ListActivity {
         }else if(position==9) {
             Intent intent = new Intent(this,  ListViewSwipeActivity.class);
             startActivity(intent);
+        }else if(position==10) {
+            Intent intent = new Intent(this,  ListViewMultiSelectActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -93,6 +96,7 @@ public class MainActivity extends ListActivity {
         items.add("Activity基类-框架");
         items.add("AsyncTask停止");
         items.add("ListView上拉下拉刷新以及滑动删除");
+        items.add("ListView多选");
         return items;
     }
 
