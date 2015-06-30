@@ -2,42 +2,35 @@ package com.chen.ui;
 
 import java.io.File;
 import java.io.FilenameFilter;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+
 import com.chen.R;
 import com.chen.adapter.LocalImageAdapter;
 import com.chen.util.image.ImageFloder;
-import com.chen.util.image.ListImageDirPopupWindow;
-import com.chen.util.image.ListImageDirPopupWindow.OnImageDirSelected;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.provider.MediaStore;
-import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.PopupWindow.OnDismissListener;
 
-public class LocalImageActivity extends Activity implements OnImageDirSelected {
-
-    private RelativeLayout rl_right;
-
-    private TextView iv_right, tv_title_name;
+public class LocalImageActivity extends Activity {
 
     private ProgressDialog mProgressDialog;
 
@@ -63,14 +56,6 @@ public class LocalImageActivity extends Activity implements OnImageDirSelected {
 
     int totalCount = 0;
 
-    private int mScreenHeight;
-
-    private ListImageDirPopupWindow mListImageDirPopupWindow;
-
-    private int max_size = 0;
-
-    private int LOCAL_IMAGE_TAG;
-
     public static final int LOCAL_IMAGE_ALBUM = 0; // 相册
 
     public static final int LOCAL_IMAGE_AVATER = 1; // 头像
@@ -88,8 +73,6 @@ public class LocalImageActivity extends Activity implements OnImageDirSelected {
             mProgressDialog.dismiss();
             // 为View绑定数据
             data2View();
-            // 初始化展示文件夹的popupWindw
-            initListDirPopupWindw();
         }
     };
 
@@ -113,38 +96,11 @@ public class LocalImageActivity extends Activity implements OnImageDirSelected {
         mImageCount.setText(totalCount + "张");
     };
 
-    /**
-     * 初始化展示文件夹的popupWindw
-     */
-    private void initListDirPopupWindw() {
-        mListImageDirPopupWindow = new ListImageDirPopupWindow(
-                LayoutParams.MATCH_PARENT, (int) (mScreenHeight * 0.7),
-                mImageFloders, LayoutInflater.from(getApplicationContext())
-                        .inflate(R.layout.view_localimage_list_dir, null));
-
-        mListImageDirPopupWindow.setOnDismissListener(new OnDismissListener() {
-
-            @Override
-            public void onDismiss() {
-                // 设置背景颜色变暗
-                WindowManager.LayoutParams lp = getWindow().getAttributes();
-                lp.alpha = 1.0f;
-                getWindow().setAttributes(lp);
-            }
-        });
-        // 设置选择文件夹的回调
-        mListImageDirPopupWindow.setOnImageDirSelected(this);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_localimage);
-
-        DisplayMetrics outMetrics = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
-        mScreenHeight = outMetrics.heightPixels;
-
 
         initView();
         getImages();
@@ -152,8 +108,10 @@ public class LocalImageActivity extends Activity implements OnImageDirSelected {
 
     }
 
+    //保存
     public void onRightClick(View view) {
-        List<String> mSelectedImage = mAdapter.mSelectedImage;
+        @SuppressWarnings("unused")
+        List<String> ImageList = mAdapter.mSelectedImage;
     }
 
     /**
@@ -268,21 +226,29 @@ public class LocalImageActivity extends Activity implements OnImageDirSelected {
         mBottomLy.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(LocalImageActivity.this,
+                        LocalImageFoldActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("foles", (Serializable) mImageFloders);
+                intent.putExtras(bundle);
+                startActivityForResult(intent, 22);
 
-                mListImageDirPopupWindow
-                        .setAnimationStyle(R.style.anim_popup_dir);
-                mListImageDirPopupWindow.showAsDropDown(mBottomLy, 0, 0);
-
-                // 设置背景颜色变暗
-                WindowManager.LayoutParams lp = getWindow().getAttributes();
-                lp.alpha = .3f;
-                getWindow().setAttributes(lp);
             }
         });
 
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == 22 && requestCode == 22) {
+            ImageFloder folder = (ImageFloder) data
+                    .getSerializableExtra("imagefole");
+            if (folder != null) {
+                selected(folder);
+            }
+        }
+    }
     public void selected(ImageFloder floder) {
 
         mImgDir = new File(floder.getDir());
@@ -304,7 +270,6 @@ public class LocalImageActivity extends Activity implements OnImageDirSelected {
         // mAdapter.notifyDataSetChanged();
         mImageCount.setText(floder.getCount() + "张");
         mChooseDir.setText(floder.getName());
-        mListImageDirPopupWindow.dismiss();
     }
 
 }

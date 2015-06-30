@@ -1,63 +1,61 @@
 package com.chen.util.image;
 
-public class ImageFloder
-{
-	/**
-	 * 图片的文件夹路径
-	 */
-	private String dir;
+import java.io.Serializable;
 
-	/**
-	 * 第一张图片的路径
-	 */
-	private String firstImagePath;
+public class ImageFloder implements Serializable {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = -1291233618819141081L;
 
-	/**
-	 * 文件夹的名称
-	 */
-	private String name;
+    /**
+     * 图片的文件夹路径
+     */
+    private String dir;
 
-	/**
-	 * 图片的数量
-	 */
-	private int count;
+    /**
+     * 第一张图片的路径
+     */
+    private String firstImagePath;
 
-	public String getDir()
-	{
-		return dir;
-	}
+    /**
+     * 文件夹的名称
+     */
+    private String name;
 
-	public void setDir(String dir)
-	{
-		this.dir = dir;
-		int lastIndexOf = this.dir.lastIndexOf("/");
-		this.name = this.dir.substring(lastIndexOf);
-	}
+    /**
+     * 图片的数量
+     */
+    private int count;
 
-	public String getFirstImagePath()
-	{
-		return firstImagePath;
-	}
+    public String getDir() {
+        return dir;
+    }
 
-	public void setFirstImagePath(String firstImagePath)
-	{
-		this.firstImagePath = firstImagePath;
-	}
+    public void setDir(String dir) {
+        this.dir = dir;
+        int lastIndexOf = this.dir.lastIndexOf("/");
+        this.name = this.dir.substring(lastIndexOf);
+    }
 
-	public String getName()
-	{
-		return name;
-	}
-	public int getCount()
-	{
-		return count;
-	}
+    public String getFirstImagePath() {
+        return firstImagePath;
+    }
 
-	public void setCount(int count)
-	{
-		this.count = count;
-	}
+    public void setFirstImagePath(String firstImagePath) {
+        this.firstImagePath = firstImagePath;
+    }
 
-	
+    public String getName() {
+        return name;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 
 }

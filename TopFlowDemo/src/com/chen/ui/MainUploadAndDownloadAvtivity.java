@@ -8,12 +8,14 @@ import java.io.UnsupportedEncodingException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpVersion;
 import org.apache.http.client.ClientProtocolException;
@@ -57,6 +59,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 
+@SuppressWarnings("deprecation")
 public class MainUploadAndDownloadAvtivity extends Activity {
     private MyGridView mGridView;
 
@@ -85,19 +88,22 @@ public class MainUploadAndDownloadAvtivity extends Activity {
                 if (position == 0) {
                     downloadWithProgress();
                 } else if (position == 1) {
-
+                    uploadAttach();
                 } else if (position == 2) {
 
                 } else if (position == 3) {
 
                 }
             }
+
+            
         });
     }
 
     private List<String> fillList() {
         List<String> items = new ArrayList<String>();
         items.add("带进度条下载");
+        items.add("上传文件");
         return items;
     }
 
@@ -112,6 +118,10 @@ public class MainUploadAndDownloadAvtivity extends Activity {
         // "http://yinyueshiting.baidu.com/data2/music/134274216/103788310800128.mp3?xcode=3c7bddbe70a2b6900fd1a9e14bd081d7&amp;song_id=1037883";
         // String name = "Just Dance.mp3";
         new downloadAttachTask(url, name).execute();
+    }
+    
+    private void uploadAttach() {
+        new uploadAttach().execute();
     }
 
     @Override
@@ -240,6 +250,35 @@ public class MainUploadAndDownloadAvtivity extends Activity {
     }
     
     
+    class uploadAttach extends AsyncTask<String, Void, String>{
+
+        @Override
+        protected String doInBackground(String... arg0) {
+            String filepath=ConstantUtil.ATTACH_PATH+"LazyWeather.apk";
+            
+            try {
+                FileUtils.readFileToString(new File(filepath));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            String url="http://180.153.53.247:82/ylms/inter/upDataFile";
+            HashMap<String, String> map = new HashMap<String, String>();
+            map.put("username", "t_user");
+            map.put("password", "t_password");
+            return postVoiceByHttpClient(MainUploadAndDownloadAvtivity.this, url, map, filepath);
+        }
+        
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            if(result!=null) {
+                System.out.println("结果："+result);
+            }
+        }
+        
+    }
+    
+    
     /**
      * 上传图片文件
      * @param context
@@ -318,7 +357,7 @@ public class MainUploadAndDownloadAvtivity extends Activity {
      * @param filepath
      * @return
      */
-    public static String postVoiceByHttpClient(Context context, String url,
+    public  String postVoiceByHttpClient(Context context, String url,
             HashMap<String, String> map, String filepath) {
         String result = null;
         HttpClient client = getHttpClient(context);

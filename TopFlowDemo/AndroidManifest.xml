@@ -59,6 +59,10 @@
         <activity
             android:name="com.chen.ui.WheelDialogAvtivity"
             android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.chen.ui.LocalImageFoldActivity"
+            android:theme="@style/MyDialogStyle" />
+        
         <activity android:name="com.chen.ui.FilterSearchActivity" />
         <activity android:name="com.chen.ui.AdvertActivity" />
         <activity android:name="com.chen.ui.SplashActivity" />
