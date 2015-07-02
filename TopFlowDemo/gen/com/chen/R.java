@@ -58,6 +58,15 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int circleColor=0x7f010012;
+        /** boolean值
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int clickable=0x7f01001d;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -115,6 +124,35 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int spinSpeed=0x7f010010;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int starCount=0x7f01001a;
+        /** 资源文件值
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int starEmpty=0x7f01001b;
+        /** 资源文件值
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int starFill=0x7f01001c;
+        /** 尺寸值
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int starImageSize=0x7f010019;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -286,40 +324,46 @@ containing a value of this type.
         public static final int default_ptr_rotate=0x7f020009;
         public static final int dir_choose=0x7f02000a;
         public static final int i_shade=0x7f02000b;
-        public static final int ic_launcher=0x7f02000c;
-        public static final int icon_checked=0x7f02000d;
-        public static final int icon_loading=0x7f02000e;
-        public static final int icon_password=0x7f02000f;
-        public static final int icon_unchecked=0x7f020010;
-        public static final int indicator_arrow=0x7f020011;
-        public static final int list_selector=0x7f020012;
-        public static final int loading_img=0x7f020013;
-        public static final int pic_dir=0x7f020014;
-        public static final int picture_unselected=0x7f020015;
-        public static final int pictures_no=0x7f020016;
-        public static final int pictures_selected=0x7f020017;
-        public static final int point_normal=0x7f020018;
-        public static final int point_select=0x7f020019;
-        public static final int point_selector=0x7f02001a;
-        public static final int pull_icon_big=0x7f02001b;
-        public static final int pullup_icon_big=0x7f02001c;
-        public static final int refresh_failed=0x7f02001d;
-        public static final int refresh_succeed=0x7f02001e;
-        public static final int refreshing=0x7f02001f;
-        public static final int splash_bg=0x7f020020;
-        public static final int splash_loading_bg=0x7f020021;
-        public static final int splash_loading_item=0x7f020022;
-        public static final int splash_logo=0x7f020023;
-        public static final int whatsnew_00=0x7f020024;
-        public static final int whatsnew_01=0x7f020025;
-        public static final int whatsnew_02=0x7f020026;
-        public static final int whatsnew_03=0x7f020027;
-        public static final int wheel_bg=0x7f020028;
-        public static final int wheel_val=0x7f020029;
+        public static final int ic_home_empty=0x7f02000c;
+        public static final int ic_home_fill=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int ic_love_empty=0x7f02000f;
+        public static final int ic_love_fill=0x7f020010;
+        public static final int ic_star_empty=0x7f020011;
+        public static final int ic_star_fill=0x7f020012;
+        public static final int icon_checked=0x7f020013;
+        public static final int icon_loading=0x7f020014;
+        public static final int icon_password=0x7f020015;
+        public static final int icon_unchecked=0x7f020016;
+        public static final int indicator_arrow=0x7f020017;
+        public static final int list_selector=0x7f020018;
+        public static final int loading_img=0x7f020019;
+        public static final int pic_dir=0x7f02001a;
+        public static final int picture_unselected=0x7f02001b;
+        public static final int pictures_no=0x7f02001c;
+        public static final int pictures_selected=0x7f02001d;
+        public static final int point_normal=0x7f02001e;
+        public static final int point_select=0x7f02001f;
+        public static final int point_selector=0x7f020020;
+        public static final int pull_icon_big=0x7f020021;
+        public static final int pullup_icon_big=0x7f020022;
+        public static final int refresh_failed=0x7f020023;
+        public static final int refresh_succeed=0x7f020024;
+        public static final int refreshing=0x7f020025;
+        public static final int splash_bg=0x7f020026;
+        public static final int splash_loading_bg=0x7f020027;
+        public static final int splash_loading_item=0x7f020028;
+        public static final int splash_logo=0x7f020029;
+        public static final int whatsnew_00=0x7f02002a;
+        public static final int whatsnew_01=0x7f02002b;
+        public static final int whatsnew_02=0x7f02002c;
+        public static final int whatsnew_03=0x7f02002d;
+        public static final int wheel_bg=0x7f02002e;
+        public static final int wheel_val=0x7f02002f;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0052;
-        public static final int back=0x7f0a004e;
+        public static final int action_settings=0x7f0a0055;
+        public static final int back=0x7f0a0051;
         public static final int both=0x7f0a0000;
         public static final int btn_add=0x7f0a0023;
         public static final int btn_back=0x7f0a0022;
@@ -336,7 +380,7 @@ containing a value of this type.
         public static final int choice=0x7f0a0004;
         public static final int content=0x7f0a001c;
         public static final int dismiss=0x7f0a0005;
-        public static final int front=0x7f0a004f;
+        public static final int front=0x7f0a0052;
         public static final int gridview=0x7f0a003b;
         public static final int head_view=0x7f0a0010;
         public static final int id_bottom_ly=0x7f0a0031;
@@ -350,12 +394,12 @@ containing a value of this type.
         public static final int id_list_dir=0x7f0a0037;
         public static final int id_province=0x7f0a0044;
         public static final int id_total_count=0x7f0a0033;
-        public static final int img1=0x7f0a0047;
-        public static final int img2=0x7f0a0048;
-        public static final int img3=0x7f0a0049;
-        public static final int img4=0x7f0a004a;
+        public static final int img1=0x7f0a004a;
+        public static final int img2=0x7f0a004b;
+        public static final int img3=0x7f0a004c;
+        public static final int img4=0x7f0a004d;
         public static final int left=0x7f0a0001;
-        public static final int linearlayout=0x7f0a0046;
+        public static final int linearlayout=0x7f0a0049;
         public static final int list=0x7f0a0021;
         public static final int listview=0x7f0a002e;
         public static final int ll_content=0x7f0a000c;
@@ -374,21 +418,24 @@ containing a value of this type.
         public static final int progress_bar=0x7f0a003c;
         public static final int progressbar=0x7f0a001a;
         public static final int pull_icon=0x7f0a0011;
-        public static final int pull_refresh_layout=0x7f0a004d;
+        public static final int pull_refresh_layout=0x7f0a0050;
         public static final int pull_to_refresh=0x7f0a0009;
         public static final int pullup_icon=0x7f0a000a;
+        public static final int ratingbar=0x7f0a0045;
+        public static final int ratingbar_home=0x7f0a0047;
+        public static final int ratingbar_love=0x7f0a0046;
         public static final int refreshing_icon=0x7f0a0012;
-        public static final int remove=0x7f0a0050;
+        public static final int remove=0x7f0a0053;
         public static final int reveal=0x7f0a0006;
         public static final int right=0x7f0a0003;
         public static final int searchbox=0x7f0a0020;
         public static final int select=0x7f0a002f;
-        public static final int slidepageviewtest_ui_SlidePageView_test=0x7f0a0045;
-        public static final int splash_loading_item=0x7f0a004c;
-        public static final int splash_logo=0x7f0a004b;
+        public static final int slidepageviewtest_ui_SlidePageView_test=0x7f0a0048;
+        public static final int splash_loading_item=0x7f0a004f;
+        public static final int splash_logo=0x7f0a004e;
         public static final int state_iv=0x7f0a0014;
         public static final int state_tv=0x7f0a0013;
-        public static final int text=0x7f0a0051;
+        public static final int text=0x7f0a0054;
         public static final int three_line=0x7f0a0040;
         public static final int title=0x7f0a001b;
         public static final int tv=0x7f0a0007;
@@ -427,12 +474,13 @@ containing a value of this type.
         public static final int view_popwindow_menu_item=0x7f030015;
         public static final int view_popwindow_upload_image=0x7f030016;
         public static final int view_popwindow_wheel=0x7f030017;
-        public static final int view_slidepageviewdemo_ui=0x7f030018;
-        public static final int view_slidepageviewdemo_ui_b=0x7f030019;
-        public static final int view_slidepageviewdemo_ui_c=0x7f03001a;
-        public static final int view_splash=0x7f03001b;
-        public static final int view_swipe=0x7f03001c;
-        public static final int view_swipe_item=0x7f03001d;
+        public static final int view_rating=0x7f030018;
+        public static final int view_slidepageviewdemo_ui=0x7f030019;
+        public static final int view_slidepageviewdemo_ui_b=0x7f03001a;
+        public static final int view_slidepageviewdemo_ui_c=0x7f03001b;
+        public static final int view_splash=0x7f03001c;
+        public static final int view_swipe=0x7f03001d;
+        public static final int view_swipe_item=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -699,6 +747,100 @@ containing a value of this type.
           @attr name com.chen:textSize
         */
         public static final int ProgressWheel_textSize = 10;
+        /**  星评 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RatingBar_clickable com.chen:clickable}</code></td><td>boolean值</td></tr>
+           <tr><td><code>{@link #RatingBar_starCount com.chen:starCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RatingBar_starEmpty com.chen:starEmpty}</code></td><td>资源文件值</td></tr>
+           <tr><td><code>{@link #RatingBar_starFill com.chen:starFill}</code></td><td>资源文件值</td></tr>
+           <tr><td><code>{@link #RatingBar_starImageSize com.chen:starImageSize}</code></td><td>尺寸值</td></tr>
+           </table>
+           @see #RatingBar_clickable
+           @see #RatingBar_starCount
+           @see #RatingBar_starEmpty
+           @see #RatingBar_starFill
+           @see #RatingBar_starImageSize
+         */
+        public static final int[] RatingBar = {
+            0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c,
+            0x7f01001d
+        };
+        /**
+          <p>
+          @attr description
+          boolean值
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.chen:clickable
+        */
+        public static final int RatingBar_clickable = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.chen.R.attr#starCount}
+          attribute's value can be found in the {@link #RatingBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.chen:starCount
+        */
+        public static final int RatingBar_starCount = 1;
+        /**
+          <p>
+          @attr description
+          资源文件值
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.chen:starEmpty
+        */
+        public static final int RatingBar_starEmpty = 2;
+        /**
+          <p>
+          @attr description
+          资源文件值
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.chen:starFill
+        */
+        public static final int RatingBar_starFill = 3;
+        /**
+          <p>
+          @attr description
+          尺寸值
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.chen:starImageSize
+        */
+        public static final int RatingBar_starImageSize = 0;
         /**  圆角 
            <p>Includes the following attributes:</p>
            <table>

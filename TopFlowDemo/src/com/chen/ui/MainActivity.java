@@ -81,6 +81,9 @@ public class MainActivity extends ListActivity {
         }else if(position==10) {
             Intent intent = new Intent(this,  ListViewMultiSelectActivity.class);
             startActivity(intent);
+        }else if(position==11) {
+            Intent intent = new Intent(this, RatingActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -97,6 +100,7 @@ public class MainActivity extends ListActivity {
         items.add("AsyncTask停止");
         items.add("ListView上拉下拉刷新以及滑动删除");
         items.add("ListView多选");
+        items.add("星评");
         return items;
     }
 
