@@ -69,6 +69,7 @@
         <activity android:name="com.chen.ui.ActivityFragmentActivity" />
         <activity android:name="com.chen.ui.AsyncTaskActivity" />
         <activity android:name="com.chen.ui.ListViewSwipeActivity" />
+        <activity android:name="com.chen.ui.RatingActivity" />
         <activity
             android:name="com.chen.ui.SlidePageViewDemoActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
