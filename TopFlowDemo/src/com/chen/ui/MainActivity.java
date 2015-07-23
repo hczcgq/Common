@@ -84,6 +84,9 @@ public class MainActivity extends ListActivity {
         }else if(position==11) {
             Intent intent = new Intent(this, RatingActivity.class);
             startActivity(intent);
+        }else if(position==12) {
+            Intent intent = new Intent(this, AnimationActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -101,6 +104,7 @@ public class MainActivity extends ListActivity {
         items.add("ListView上拉下拉刷新以及滑动删除");
         items.add("ListView多选");
         items.add("星评");
+        items.add("动画");
         return items;
     }
 

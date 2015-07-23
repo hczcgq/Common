@@ -1,50 +1,98 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
     <com.chen.view.RatingBar
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
         android:id="@+id/ratingbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        hedgehog:starCount="5"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         hedgehog:clickable="true"
+        hedgehog:starCount="5"
         hedgehog:starEmpty="@drawable/ic_star_empty"
         hedgehog:starFill="@drawable/ic_star_fill"
-        hedgehog:starImageSize="30dp"
-        />
+        hedgehog:starImageSize="30dp" />
+
     <com.chen.view.RatingBar
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
         android:id="@+id/ratingbar_love"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        hedgehog:starCount="5"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         hedgehog:clickable="true"
+        hedgehog:starCount="5"
         hedgehog:starEmpty="@drawable/ic_love_empty"
         hedgehog:starFill="@drawable/ic_love_fill"
-        hedgehog:starImageSize="30dp"
-        />
+        hedgehog:starImageSize="30dp" />
+
     <com.chen.view.RatingBar
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
         android:id="@+id/ratingbar_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        hedgehog:starCount="5"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         hedgehog:clickable="true"
+        hedgehog:starCount="5"
         hedgehog:starEmpty="@drawable/ic_home_empty"
         hedgehog:starFill="@drawable/ic_home_fill"
-        hedgehog:starImageSize="30dp"
-        />
+        hedgehog:starImageSize="30dp" />
+
+    <com.chen.view.FlexibleRatingBar
+        android:id="@+id/flexibleRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3"
+         hedgehog:strokeWidth="2dp"
+        android:stepSize="1" />
+
+    <com.chen.view.FlexibleRatingBar
+        android:id="@+id/flexibleRatingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:numStars="5"
+        android:rating="2.5"
+        android:stepSize="0.5" />
+
+    <com.chen.view.FlexibleRatingBar
+        android:id="@+id/flexibleRatingBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numStars="6"
+        android:rating="4.5"
+        android:stepSize="0.1" />
+
+    <com.chen.view.FlexibleRatingBar
+        android:id="@+id/flexibleRatingBar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="8"
+        android:rating="5.5"
+        android:stepSize="0.5" />
+
+    <com.chen.view.FlexibleRatingBar
+        android:id="@+id/flexibleRatingBar5"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:numStars="3"
+        android:rating="1.5"
+        android:stepSize="0.5"
+        hedgehog:colorFillOff="@android:color/transparent"
+        hedgehog:colorFillOn="#1DE9B6"
+        hedgehog:colorFillPressedOff="@android:color/transparent"
+        hedgehog:colorFillPressedOn="#64FFDA"
+        hedgehog:colorOutlineOff="#00695C"
+        hedgehog:colorOutlineOn="#004D40"
+        hedgehog:colorOutlinePressed="#009688"
+        hedgehog:polygonVertices="7"
+        hedgehog:strokeWidth="1dp" />
 
 </LinearLayout>

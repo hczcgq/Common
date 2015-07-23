@@ -31,7 +31,7 @@ public class ListViewSwipeActivity extends Activity {
 
         mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.pull_refresh_layout);
         mPullToRefreshLayout
-        .setRefreshMode(PullToRefreshLayout.PULL_BOTH);
+        .setRefreshMode(PullToRefreshLayout.PULL_DOWN);
         mPullToRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
 
             @Override
