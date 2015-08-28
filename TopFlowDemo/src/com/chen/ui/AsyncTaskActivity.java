@@ -5,6 +5,8 @@ import com.chen.R;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewStub;
 import android.widget.ProgressBar;
 
 public class AsyncTaskActivity extends Activity {
@@ -12,6 +14,8 @@ public class AsyncTaskActivity extends Activity {
     private ProgressBar mProgressBar;
 
     private TestAsyncTask mTask;
+    
+    private ViewStub importPanel ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,8 @@ public class AsyncTaskActivity extends Activity {
         setContentView(R.layout.view_asynctask);
 
         mProgressBar = (ProgressBar) findViewById(R.id.progressbar);
+        importPanel=(ViewStub) findViewById(R.id.stub_import);
+        importPanel.inflate();
 
         mTask = new TestAsyncTask();
         mTask.execute();
@@ -59,6 +65,18 @@ public class AsyncTaskActivity extends Activity {
             if (isCancelled()) {
                 return;
             }
+        }
+        
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            importPanel.setVisibility(View.GONE);
+        }
+        
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            importPanel.setVisibility(View.VISIBLE);
         }
     }
 }
